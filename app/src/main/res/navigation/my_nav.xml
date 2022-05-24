@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.fahmi.assesmen2.fragments.list.ListFragment"
+        android:label="List Mahasiswa"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_updateFragment2"
+            app:destination="@id/updateFragment2" />
+        <action
+            android:id="@+id/action_listFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.fahmi.assesmen2.fragments.add.AddFragment"
+        android:label="Tambah Mahasiswa"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment2"
+        android:name="com.fahmi.assesmen2.fragments.update.UpdateFragment"
+        android:label="Update Mahasiswa"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_updateFragment2_to_listFragment"
+            app:destination="@id/listFragment" />
+        <argument
+            android:name="currentMahasiswa"
+            app:argType="com.fahmi.assesmen2.db.Mahasiswa" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.fahmi.assesmen2.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_listFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+</navigation>
