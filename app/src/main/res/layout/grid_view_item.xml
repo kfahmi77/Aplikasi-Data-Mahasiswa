@@ -5,7 +5,7 @@
     <data>
         <variable
             name="picture"
-            type="com.fahmi.assesmen2.network.Picture" />
+            type="com.fahmi.assesmen2.db.Picture" />
     </data>
 
     <ImageView
@@ -15,6 +15,6 @@
         android:adjustViewBounds="true"
         android:padding="2dp"
         android:scaleType="fitXY"
-        app:imageUrl="@{picture.imgSrcUrl}"
+        app:imageUrl="@{picture.pictureUrl}"
         tools:src="@tools:sample/avatars" />
 </layout>

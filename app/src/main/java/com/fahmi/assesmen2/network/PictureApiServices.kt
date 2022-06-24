@@ -1,5 +1,6 @@
 package com.fahmi.assesmen2.network
 
+import com.fahmi.assesmen2.db.Picture
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Retrofit

@@ -6,7 +6,7 @@ import androidx.core.net.toUri
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import com.fahmi.assesmen2.network.Picture
+import com.fahmi.assesmen2.db.Picture
 import com.fahmi.assesmen2.fragments.picture.PictureApiStatus
 import com.fahmi.assesmen2.fragments.picture.PictureGridAdapter
 

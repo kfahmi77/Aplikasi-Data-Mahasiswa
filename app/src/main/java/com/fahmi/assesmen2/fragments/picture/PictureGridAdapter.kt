@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.fahmi.assesmen2.databinding.GridViewItemBinding
-import com.fahmi.assesmen2.network.Picture
+import com.fahmi.assesmen2.db.Picture
 
 class PictureGridAdapter: ListAdapter<Picture, PictureGridAdapter.MarsPhotoViewHolder>(DiffCallback) {
     override fun onCreateViewHolder(
@@ -23,7 +23,7 @@ class PictureGridAdapter: ListAdapter<Picture, PictureGridAdapter.MarsPhotoViewH
 
     class MarsPhotoViewHolder(private var binding: GridViewItemBinding): RecyclerView.ViewHolder(binding.root){
         fun bind(Picture: Picture){
-            binding.photo = Picture
+            binding.picture = Picture
             binding.executePendingBindings()
         }
     }
@@ -34,7 +34,7 @@ class PictureGridAdapter: ListAdapter<Picture, PictureGridAdapter.MarsPhotoViewH
         }
 
         override fun areContentsTheSame(oldItem: Picture, newItem: Picture): Boolean {
-            return oldItem.imgSrcUrl == newItem.imgSrcUrl
+            return oldItem.pictureUrl == newItem.pictureUrl
         }
 
     }

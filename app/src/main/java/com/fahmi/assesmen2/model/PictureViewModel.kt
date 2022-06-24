@@ -21,7 +21,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.fahmi.assesmen2.network.PhotoApi
-import com.fahmi.assesmen2.network.Picture
+import com.fahmi.assesmen2.db.Picture
 import kotlinx.coroutines.launch
 import java.lang.Exception
 
