@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.fahmi.assesmen2.fragments.picture
+package com.fahmi.assesmen2.model
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

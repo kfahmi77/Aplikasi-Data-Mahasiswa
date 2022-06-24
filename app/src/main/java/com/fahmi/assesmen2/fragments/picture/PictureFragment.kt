@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.fahmi.assesmen2.databinding.FragmentPictureBinding
+import com.fahmi.assesmen2.model.PictureViewModel
 
 class PictureFragment : Fragment() {
 

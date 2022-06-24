@@ -6,7 +6,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.fahmi.assesmen2.fragments.picture.PictureViewModel" />
+            type="com.fahmi.assesmen2.model.PictureViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
