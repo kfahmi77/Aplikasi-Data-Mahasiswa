@@ -6,7 +6,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 
-private const val BASE_URL = "https://android-kotlin-fun-mars-server.appspot.com"
+private const val BASE_URL = "https://kfahmi77.github.io/fahmi.github.io/"
 
 private val moshi = Moshi.Builder()
     .add(KotlinJsonAdapterFactory())
@@ -18,7 +18,7 @@ private val retrofit = Retrofit.Builder()
     .build()
 
 interface MarsApiService{
-    @GET("photos")
+    @GET("photos.json")
     suspend fun getPhotos() : List<Picture>
 }
 

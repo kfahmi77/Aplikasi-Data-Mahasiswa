@@ -18,7 +18,7 @@
             app:destination="@id/updateFragment2" />
         <action
             android:id="@+id/action_listFragment_to_overviewFragment"
-            app:destination="@id/overviewFragment" />
+            app:destination="@id/PictureFragment" />
     </fragment>
     <fragment
         android:id="@+id/addFragment"
@@ -42,11 +42,15 @@
             app:argType="com.fahmi.assesmen2.db.Mahasiswa" />
     </fragment>
     <fragment
-        android:id="@+id/overviewFragment"
+        android:id="@+id/PictureFragment"
         android:name="com.fahmi.assesmen2.fragments.picture.PictureFragment"
-        android:label="OverviewFragment" >
+        android:label="Galeri Gambar" >
         <action
             android:id="@+id/action_overviewFragment_to_listFragment"
             app:destination="@id/listFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.fahmi.assesmen2.SettingFragment"
+        android:label="SettingFragment" />
 </navigation>

@@ -27,7 +27,7 @@ fun bindRecyclerView(recyclerView: RecyclerView, data: List<Picture>?){
     adapter.submitList(data)
 }
 
-@BindingAdapter("marsApiStatus")
+@BindingAdapter("apiStatus")
 fun bindStatus(statusImageView: ImageView, status: PictureApiStatus?){
     when(status){
         PictureApiStatus.LOADING -> {
